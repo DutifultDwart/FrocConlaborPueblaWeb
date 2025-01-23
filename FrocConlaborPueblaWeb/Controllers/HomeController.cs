@@ -18,11 +18,6 @@ namespace FrocConlaborPueblaWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult Test()
         {
             return View();
