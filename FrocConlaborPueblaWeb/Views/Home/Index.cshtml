@@ -1,8 +1,123 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- presentación -->
+<div class="container-fluid p-0">
+    <img src="~/img/imgPresentacion.jpg" alt="Imagen de Presentación" class="img-fluid w-100">
 </div>
+
+<!-- texto -->
+<div class="container mt-3 text-center">
+    <p class="lead texto-description mb-3">
+        La organización sindical más grande e importante por sectores en el Estado de Puebla,
+        experiencia y profesionalismo en nuestras representantes.
+    </p>
+    <button class="btn btn-primary mb-4" onclick="location.href='#info-sindicato'">Saber más <span class="bi bi-arrow-down"></span></button>
+</div>
+
+<!-- carrusel (boletines de inf) -->
+<div class="container-fluid p-0">
+    <div id="carouselExampleIndicators" class="carousel slide mt-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/img/pruebaSlide1.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/pruebaSlide1.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/pruebaSlide1.png" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- noticias  -->
+<div class="container mt-5">
+    <h2 class="text-center">Noticias</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="~/img/imgNoticia1.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">título de la noticia 1</h5>
+                    <p class="card-text">resumen...</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="~/img/imgNoticia1.jpg" class="card-img-top" alt="Noticia 2">
+                <div class="card-body">
+                    <h5 class="card-title">título de la noticia 2</h5>
+                    <p class="card-text">resumen...</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="~/img/imgNoticia1.jpg" class="card-img-top" alt="Noticia 3">
+                <div class="card-body">
+                    <h5 class="card-title">título de la noticia 3</h5>
+                    <p class="card-text">resumen...</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- btn noticias  -->
+    <div class="text-center mt-2">
+        <button class="btn btn-secondary">Más noticias</button>
+    </div>
+</div>
+
+<!-- inf sindicato agregar mas inf  -->
+<div id="info-sindicato" class="container mt-5">
+    <h2 class="text-center">Información del Sindicato</h2>
+    <p class="text-center">
+        Nuestro sindicato es la organización sindical más grande e importante por sectores en el Estado de Puebla.
+        Nos dedicamos a representar y defender los intereses de nuestros miembros con experiencia y profesionalismo.
+        Nuestra misión es mejorar las condiciones laborales y promover el bienestar de todos nuestros afiliados.
+    </p>
+</div>
+
+<div id="contacto" class="container d-flex flex-column align-items-center justify-content-center mt-5 text-center" style="min-height: 100vh;">
+    <div class="row">
+        <div class="col-md-12 justificado">
+            <p>Antiguo Camino a la Resurrección No. 1002-A Zona Industrial Puebla Oriente, Edificio D1, Oficina Sindical, planta alta STUTP – FROC CONLABOR PUEBLA – SNPALM, Pue. México</p>
+        </div>
+        <div class="col-md-12 justificado">
+            <p>+52 222 367 4803</p>
+        </div>
+        <div class="col-md-12 justificado">
+            <p>contacto@frocconlaborpuebla.org</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <a href="https://www.facebook.com" target="_blank" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="text-muted me-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="text-muted me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+

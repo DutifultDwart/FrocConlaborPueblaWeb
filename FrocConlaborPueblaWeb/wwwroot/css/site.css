@@ -3,9 +3,7 @@ html {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -22,6 +20,71 @@ body {
 }
 
 .logo-img {
-  height: 60px; 
+  height: 60px;
   margin-right: 10px;
 }
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.texto-descriptivo {
+  font-weight: black;
+  color: #636156;
+  font-size: 1.5rem;
+}
+
+/* encabezado con animación */
+#main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: -100px; 
+  transition: top 0.3s ease-in-out; 
+}
+
+.header-visible {
+  top: 0; 
+
+.header-hidden {
+  top: -100px; 
+}
+
+
+.full-screen-contact {
+  min-height: 100vh; 
+  background-color: yellow; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+  .full-screen-contact .row {
+    flex-grow: 1; 
+  }
+
+
+.justificado {
+  text-align: justify;
+  margin-bottom: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
