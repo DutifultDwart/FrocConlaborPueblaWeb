@@ -47,7 +47,7 @@ body {
   color: #636156;
   font-size: 1.5rem;
 }
-
+/*////////////////////////////////////////////////////////*/
 /* encabezado con animación */
 #main-header {
   position: fixed;
@@ -87,4 +87,36 @@ body {
   align-items: center;
 }
 
+/*//////////////////////////////////////////////////////////////*/
+/* Estilos para el encabezado */
+.navbar {
+  background-color: #FFCE4B;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Estilos específicos para el logo */
+.logo-img {
+  background-color: transparent; /* Asegura que el logo tenga un fondo transparente */
+}
+
+/* Estilo para el dropdown */
+.dropdown-item {
+  color: black; /* Color del texto en el menú desplegable */
+}
+
+  .dropdown-item:hover {
+    background-color: #FFCE4B;
+    color: white;
+  }
+
+  /*/////////////////////////////////////////*/
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #FFCE4B;
+  color: white;
+}
 
