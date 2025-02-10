@@ -47,76 +47,60 @@ body {
   color: #636156;
   font-size: 1.5rem;
 }
-/*////////////////////////////////////////////////////////*/
-/* encabezado con animación */
-#main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: -100px; 
-  transition: top 0.3s ease-in-out; 
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF8E1; /* Color de fondo suave */
+  color: #333;
 }
 
-.header-visible {
-  top: 0; 
-
-.header-hidden {
-  top: -100px; 
-}
-
-
-.full-screen-contact {
-  min-height: 100vh; 
-  background-color: yellow; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-
-  .full-screen-contact .row {
-    flex-grow: 1; 
-  }
-
-
-.justificado {
-  text-align: justify;
-  margin-bottom: 0; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*//////////////////////////////////////////////////////////////*/
-/* Estilos para el encabezado */
+/* Navbar */
 .navbar {
-  background-color: #FFCE4B;
+  background-color: #F2C849 !important; /* Color de fondo principal */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-link {
-  color: white !important;
-}
-
-/* Estilos específicos para el logo */
-.logo-img {
-  background-color: transparent; /* Asegura que el logo tenga un fondo transparente */
-}
-
-/* Estilo para el dropdown */
-.dropdown-item {
-  color: black; /* Color del texto en el menú desplegable */
-}
-
-  .dropdown-item:hover {
-    background-color: #FFCE4B;
-    color: white;
+  .navbar .navbar-brand img {
+    height: 50px; /* Tamaño del logo */
   }
 
-  /*/////////////////////////////////////////*/
+  .navbar .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
 
-/* Estilos para el pie de página */
-.footer {
-  background-color: #FFCE4B;
-  color: white;
+    .navbar .nav-link:hover {
+      color: #333 !important;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+/* Menú desplegable */
+.dropdown-menu {
+  background-color: #F2C849;
+  border: none;
 }
 
+.dropdown-item:hover {
+  background-color: #FFD700;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  padding-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #F2C849;
+  color: #333;
+  padding: -20px 0; /* Reduciendo el espacio del footer */
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 10px; /* Tamaño de fuente más pequeño */
+  font-family: 'Arial', sans-serif; /* Fuente mejorada */
+}

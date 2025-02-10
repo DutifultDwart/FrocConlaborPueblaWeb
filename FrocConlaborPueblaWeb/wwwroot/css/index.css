@@ -1,0 +1,97 @@
+﻿/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* Imagen de presentación */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.texto-description {
+  font-weight: bold;
+  color: #636156;
+  font-size: 1.2rem;
+}
+
+/* Botón de saber más */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+
+/* Carrusel */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Noticias */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+
+/* Información de contacto */
+#contacto {
+  background-color: #f8f9fa;
+}
+
+  #contacto p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #contacto a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+    #contacto a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+/* Estilos para íconos de contacto */
+.bi {
+  margin-right: 0.5rem;
+  color: #000;
+}
+
+/* Mapa */
+iframe {
+  border: 0;
+}
