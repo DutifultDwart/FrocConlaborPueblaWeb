@@ -23,6 +23,15 @@ namespace FrocConlaborPueblaWeb.Controllers
             return View();
         }
 
+        public IActionResult SIUTP()
+        {
+            return View();
+        }
+        public IActionResult noticias()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
