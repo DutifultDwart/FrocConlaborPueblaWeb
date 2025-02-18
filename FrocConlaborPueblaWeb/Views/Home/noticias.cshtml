@@ -1,65 +1,93 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Noticias";
 }
 
-@section Styles {
-    <link rel="stylesheet" href="~/css/style.css">
-}
+<link rel="stylesheet" href="~/css/noticias.css" />
 
-<main class="container">
-    <section class="hero">
-        <img src="https://picsum.photos/800/400" alt="Actividad Sindical">
-        <h1>¡Únete al Movimiento Estudiantil!</h1>
-        <p>Trabajando por tus derechos y beneficios en la universidad.</p>
-        <a href="#inscripcion" class="cta-button">Conviértete en Miembro</a>
-    </section>
+<div class="container-fluid py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h1 class="noticias-title">Últimas Noticias</h1>
+        <p class="noticias-subtitle">Mantente informado sobre las últimas novedades del sindicato.</p>
+    </div>
+</div>
 
-    <section class="news-grid">
-        <article class="news-card">
-            <img src="https://picsum.photos/400/200" alt="Asamblea General">
-            <div class="news-content">
-                <h2>Próxima Asamblea General</h2>
-                <p>Discutiendo mejoras en las instalaciones deportivas y nuevos programas académicos.</p>
-                <span class="date">20 de Febrero, 14:00 hrs.</span>
+<div class="container py-5">
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card noticia-card">
+                <div class="card-img-wrapper">
+                    <img src="~/img/noticias/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia 1</h5>
+                    <p class="card-date">Publicado el 10 de octubre de 2023</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
             </div>
-        </article>
-
-        <article class="news-card">
-            <img src="https://picsum.photos/401/200" alt="Beneficio Estudiantil">
-            <div class="news-content">
-                <h2>Nuevos Beneficios para Socios</h2>
-                <p>Lanzamos programa de descuentos exclusivos en tiendas universitarias.</p>
-                <span class="date">Publicado: 15 Feb</span>
-            </div>
-        </article>
-
-        <article class="news-card">
-            <img src="https://picsum.photos/402/200" alt="Actividad Cultural">
-            <div class="news-content">
-                <h2>Semana Cultural Universitaria</h2>
-                <p>Organizamos talleres gratuitos y exposiciones estudiantiles.</p>
-                <span class="date">Del 15 al 19 de Marzo</span>
-            </div>
-        </article>
-    </section>
-
-    <section class="calls-to-action">
-        <div class="cta-box">
-            <h3>¿Qué Ofrecemos?</h3>
-            <ul>
-                <li>Asesoría académica gratuita</li>
-                <li>Descuentos exclusivos</li>
-                <li>Acceso a eventos culturales</li>
-                <li>Audiencias con autoridades</li>
-            </ul>
         </div>
 
-        <div class="cta-box">
-            <h3>Únete Ahora</h3>
-            <p></p>
-            <p></p>
-            <a href="#inscripcion" class="cta-button">Inscribirse</a>
+        <div class="col-md-6 mb-4">
+            <div class="card noticia-card">
+                <div class="card-img-wrapper">
+                    <img src="~/img/noticias/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia 2</h5>
+                    <p class="card-date">Publicado el 5 de octubre de 2023</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
-</main>
 
+        <div class="col-md-6 mb-4">
+            <div class="card noticia-card">
+                <div class="card-img-wrapper">
+                    <img src="~/img/noticias/noticias3.jpg" class="card-img-top" alt="Noticia 3">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia 3</h5>
+                    <p class="card-date">Publicado el 1 de octubre de 2023</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card noticia-card">
+                <div class="card-img-wrapper">
+                    <img src="~/img/noticia3.jpg" class="card-img-top" alt="Noticia 4">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia 3</h5>
+                    <p class="card-date">Publicado el 1 de octubre de 2023</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card noticia-card">
+                <div class="card-img-wrapper">
+                    <img src="~/img/noticia3.jpg" class="card-img-top" alt="Noticia 5">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia 3</h5>
+                    <p class="card-date">Publicado el 1 de octubre de 2023</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

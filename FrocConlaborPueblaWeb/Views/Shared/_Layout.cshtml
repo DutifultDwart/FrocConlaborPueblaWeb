@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -21,20 +22,20 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i> <!-- Ícono de barras -->
+                        <i class="fas fa-bars"></i> 
                     </span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="conoceAlSIUTP" role="button" aria-haspopup="true" aria-expanded="false">Conoce al SIUTP</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="conoceAlSIUTP">
-                                <div class="container">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="SIUTP">SIUTP</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="noticias">Noticias</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Equipo">Equipo</a>
-                                </div>
-                            </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="conoceAlSIUTP" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conoce a ST UTP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="conoceAlSIUTP">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="STUTP">SI UTP</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="noticias">Noticias</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Colaboradores">Conoce a nuestros integrantes</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="ComunicadosPrensa">Comunicados y prensa</a>
@@ -47,7 +48,7 @@
             </div>
         </nav>
     </header>
-   
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

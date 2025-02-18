@@ -1,29 +1,43 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF; /* Color de fondo */
+  color: #333;
+}
+
+/* Ajustes generales */
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
-  font-size: 16px;
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
   margin-bottom: 60px;
 }
 
+/* Estilo para botones y formularios */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Logo */
 .logo-img {
   height: 60px;
   margin-right: 10px;
 }
 
+/* Hero Image */
 .hero-image {
   position: relative;
   width: 100%;
@@ -42,23 +56,16 @@ body {
   object-fit: cover;
 }
 
+/* Texto descriptivo */
 .texto-descriptivo {
-  font-weight: black;
+  font-weight: bold;
   color: #636156;
   font-size: 1.5rem;
 }
 
-
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #FFF8E1; /* Color de fondo suave */
-  color: #333;
-}
-
 /* Navbar */
 .navbar {
-  background-color: #F2C849 !important; /* Color de fondo principal */
+  background-color: #F2C849 !important; /* Color de fondo */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -81,12 +88,28 @@ body {
 .dropdown-menu {
   background-color: #F2C849;
   border: none;
+  width: auto; /* Evita que ocupe toda la pantalla */
+  display: none;
+  min-width: 200px; /* Ancho mínimo */
+  max-width: 270px; /* Ancho máximo */
+  padding: 10px;
+  margin-top: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.dropdown-item:hover {
-  background-color: #FFD700;
+.dropdown-item {
   color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
 }
+
+  .dropdown-item:hover {
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 4px;
+  }
 
 /* Contenedor principal */
 .container {
@@ -97,10 +120,10 @@ body {
 footer {
   background-color: #F2C849;
   color: #333;
-  padding: -20px 0; /* Reduciendo el espacio del footer */
+  padding: 10px 0; /* Ajuste de espacio */
   text-align: center;
   font-weight: bold;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 10px; /* Tamaño de fuente más pequeño */
-  font-family: 'Arial', sans-serif; /* Fuente mejorada */
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
 }

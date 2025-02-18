@@ -1,0 +1,80 @@
+/* Estilos para la vista Colaboradores */
+
+/* Título de la página */
+.colaboradores-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFC552; /* Color de letra amarillo dorado */
+  margin-bottom: 1rem;
+}
+
+.colaboradores-subtitle {
+  font-size: 1.25rem;
+  color: #FFC552; /* Color de letra amarillo dorado */
+}
+
+/* Fondo de la sección de colaboradores */
+.container-fluid.bg-light {
+  background-color: #007A78 !important; /* Color de fondo azul verdoso */
+}
+
+/* Tarjetas de colaboradores */
+.colaborador-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+  .colaborador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .colaborador-card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .colaborador-card .card-body {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .colaborador-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007A78; /* Color de letra azul verdoso */
+    margin-bottom: 0.5rem;
+  }
+
+  .colaborador-card .card-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+
+  .colaborador-card .card-role {
+    font-size: 1rem;
+    color: #FFC552; /* Color de letra amarillo dorado */
+    font-weight: 500;
+  }
+
+  /* Iconos de redes sociales */
+  .colaborador-card .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+    .colaborador-card .social-icons a {
+      color: #007A78; /* Color de iconos azul verdoso */
+      font-size: 1.25rem;
+      transition: color 0.3s ease;
+    }
+
+      .colaborador-card .social-icons a:hover {
+        color: #FFC552; /* Color de iconos al hacer hover (amarillo dorado) */
+      }

@@ -23,11 +23,19 @@ namespace FrocConlaborPueblaWeb.Controllers
             return View();
         }
 
-        public IActionResult SIUTP()
+        public IActionResult STUTP()
         {
             return View();
         }
         public IActionResult noticias()
+        {
+            return View();
+        }
+        public IActionResult Colaboradores()
+        {
+            return View();
+        }
+        public IActionResult PrensaComunicados()
         {
             return View();
         }

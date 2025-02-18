@@ -1,97 +1,139 @@
-﻿/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
+﻿
+.container-fluid.p-0 img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: contain; 
 }
 
-.container-fluid {
-  padding: 0;
-}
-
-/* Imagen de presentación */
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
+/* Texto de presentación */
 .texto-description {
-  font-weight: bold;
-  color: #636156;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+  margin-top: 1.5rem;
 }
 
-/* Botón de saber más */
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #007A78; /* Color azul verdoso */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
   .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+    background-color: #005f5d; /* Color azul verdoso más oscuro */
   }
 
-/* Carrusel */
-.carousel-inner img {
-  width: 100%;
-  height: auto;
+  .btn-primary .bi-arrow-down {
+    margin-left: 0.5rem;
+  }
+
+/* Carrusel de boletines */
+.carousel-indicators button {
+  background-color: #007A78; /* Color azul verdoso */
 }
 
-/* Noticias */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007A78; /* Color azul verdoso */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Sección de noticias */
+.container.mt-8 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007A78; /* Color azul verdoso */
+  margin-bottom: 1.5rem;
+}
+
+
+/* Botón "Más noticias" */
+.text-center.mt-2 {
+  margin-bottom: 2rem; /* Agrega un margen inferior de 3rem (48px) */
+}
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
 }
 
   .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #007A78; /* Color azul verdoso */
+  margin-bottom: 0.5rem;
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .btn-secondary {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #FFC552; /* Color amarillo dorado */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
   .btn-secondary:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
+    background-color: #e0b04d; /* Color amarillo dorado más oscuro */
   }
 
-/* Información de contacto */
+/* Sección de contacto */
 #contacto {
-  background-color: #f8f9fa;
+  background-color: #FFFFFF; /* Fondo claro */
+  padding: 2rem 0;
 }
 
   #contacto p {
-    margin-bottom: 0.5rem;
     font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
   }
 
   #contacto a {
-    color: #007bff;
+    color: #007A78; /* Color azul verdoso */
     text-decoration: none;
+    transition: color 0.3s ease;
   }
 
     #contacto a:hover {
-      color: #0056b3;
-      text-decoration: underline;
+      color: #005f5d; /* Color azul verdoso más oscuro */
     }
 
-/* Estilos para íconos de contacto */
-.bi {
-  margin-right: 0.5rem;
-  color: #000;
-}
+  #contacto iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
 
-/* Mapa */
-iframe {
-  border: 0;
+/* Espacio entre el mapa y el pie de página */
+#contacto {
+  margin-bottom: 2rem; /* Agrega un margen inferior de 3rem (48px) */
 }

@@ -3,43 +3,52 @@
 
 // Write your JavaScript code.
 
-document.addEventListener('DOMContentLoaded', function () {
-  var dropdowns = document.querySelectorAll('.nav-item.dropdown');
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.getElementById("conoceAlSIUTP");
+  const dropdownMenu = dropdown.nextElementSibling;
 
-  dropdowns.forEach(function (dropdown) {
-    // Evento para dispositivos con mouse
-    dropdown.addEventListener('mouseover', function () {
-      var menu = this.querySelector('.dropdown-menu');
-      var toggle = this.querySelector('.dropdown-toggle');
-      toggle.classList.add('show');
-      menu.classList.add('show');
+  // Detectar si es un dispositivo táctil
+  function isTouchDevice() {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  }
+
+  if (!isTouchDevice()) {
+    // Funcionalidad en PC (hover)
+    dropdown.addEventListener("mouseenter", function () {
+      dropdownMenu.classList.add("show");
     });
 
-    dropdown.addEventListener('mouseout', function () {
-      var menu = this.querySelector('.dropdown-menu');
-      var toggle = this.querySelector('.dropdown-toggle');
-      toggle.classList.remove('show');
-      menu.classList.remove('show');
+    dropdownMenu.addEventListener("mouseleave", function () {
+      setTimeout(() => {
+        if (!dropdown.matches(":hover") && !dropdownMenu.matches(":hover")) {
+          dropdownMenu.classList.remove("show");
+        }
+      }, 300);
+    });
+  } else {
+    // Funcionalidad en móviles (clic)
+    dropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Evita que el clic se propague a otros elementos
+
+      // Alternar el estado del menú
+      const isOpen = dropdownMenu.classList.contains("show");
+
+      // Si el menú está abierto, lo cerramos. Si está cerrado, lo abrimos
+      if (isOpen) {
+        dropdownMenu.classList.remove("show");
+      } else {
+        dropdownMenu.classList.add("show");
+      }
     });
 
-    // Evento para dispositivos táctiles
-    dropdown.addEventListener('click', function () {
-      var menu = this.querySelector('.dropdown-menu');
-      var toggle = this.querySelector('.dropdown-toggle');
-      toggle.classList.toggle('show');
-      menu.classList.toggle('show');
+    // Cerrar el menú si se toca fuera de él
+    document.addEventListener("click", function (event) {
+      // Si se hace clic fuera del dropdown o del menú, cerramos el menú
+      if (!dropdown.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.remove("show");
+      }
     });
-  });
+  }
 });
 
-document.addEventListener('click', function (event) {
-  var dropdowns = document.querySelectorAll('.nav-item.dropdown');
-  dropdowns.forEach(function (dropdown) {
-    if (!dropdown.contains(event.target)) {
-      var menu = dropdown.querySelector('.dropdown-menu');
-      var toggle = dropdown.querySelector('.dropdown-toggle');
-      toggle.classList.remove('show');
-      menu.classList.remove('show');
-    }
-  });
-}); 
+
