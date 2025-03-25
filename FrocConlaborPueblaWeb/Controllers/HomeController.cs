@@ -35,7 +35,15 @@ namespace FrocConlaborPueblaWeb.Controllers
         {
             return View();
         }
-        public IActionResult PrensaComunicados()
+        public IActionResult Prensa()
+        {
+            return View();
+        }
+        public IActionResult ContratoColectivo()
+        {
+            return View();
+        }
+        public IActionResult Login()
         {
             return View();
         }

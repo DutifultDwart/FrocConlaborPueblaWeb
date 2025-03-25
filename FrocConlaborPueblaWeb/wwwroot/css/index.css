@@ -1,11 +1,11 @@
-﻿
+﻿/* Estilos generales */
 .container-fluid.p-0 img {
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: contain; 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-/* Texto de presentación */
+
 .texto-description {
   font-size: 1.25rem;
   color: #333;
@@ -14,7 +14,7 @@
 }
 
 .btn-primary {
-  background-color: #007A78; /* Color azul verdoso */
+  background-color: #007A78;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -22,43 +22,66 @@
 }
 
   .btn-primary:hover {
-    background-color: #005f5d; /* Color azul verdoso más oscuro */
+    background-color: #005f5d;
   }
 
   .btn-primary .bi-arrow-down {
     margin-left: 0.5rem;
   }
 
-/* Carrusel de boletines */
-.carousel-indicators button {
-  background-color: #007A78; /* Color azul verdoso */
+/* Estilos para el carrusel */
+.custom-carousel {
+  width: 100%;
+  max-height: 500px; /* Ajusta según necesites */
+  overflow: hidden;
 }
+
+
+
+  .custom-carousel .carousel-inner,
+  .custom-carousel .carousel-item,
+  .custom-carousel img {
+    height: auto;
+    max-height: 500px; /* Ajusta la altura */
+    object-fit: cover;
+  }
+
+.carousel-indicators {
+  bottom: 10px; /* Ajusta la posición de los indicadores */
+}
+
+  .carousel-indicators button {
+    width: 10px; /* Ajusta el tamaño de los indicadores */
+    height: 10px;
+    border-radius: 50%; /* Forma circular */
+    background-color: #007A78; /* Color de fondo */
+  }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #007A78; /* Color azul verdoso */
-  border-radius: 50%;
-  padding: 10px;
+  width: 30px; /* Ajusta el tamaño de los íconos */
+  height: 30px;
+  background-color: #007A78; /* Color de fondo */
+  border-radius: 50%; /* Forma circular */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%;
+  width: 5%; /* Ajusta el ancho de los controles */
 }
 
-/* Sección de noticias */
+/* Estilos para las tarjetas de noticias */
 .container.mt-8 h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #007A78; /* Color azul verdoso */
+  color: #007A78;
   margin-bottom: 1.5rem;
 }
 
-
-/* Botón "Más noticias" */
 .text-center.mt-2 {
-  margin-bottom: 2rem; /* Agrega un margen inferior de 3rem (48px) */
+  margin-bottom: 2rem;
 }
+
 .card {
   border: none;
   border-radius: 10px;
@@ -85,7 +108,7 @@
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007A78; /* Color azul verdoso */
+  color: #007A78;
   margin-bottom: 0.5rem;
 }
 
@@ -95,7 +118,7 @@
 }
 
 .btn-secondary {
-  background-color: #FFC552; /* Color amarillo dorado */
+  background-color: #FFC552;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -103,12 +126,12 @@
 }
 
   .btn-secondary:hover {
-    background-color: #e0b04d; /* Color amarillo dorado más oscuro */
+    background-color: #e0b04d;
   }
 
-/* Sección de contacto */
+/* Estilos para la sección de contacto */
 #contacto {
-  background-color: #FFFFFF; /* Fondo claro */
+  background-color: #FFFFFF;
   padding: 2rem 0;
 }
 
@@ -119,13 +142,13 @@
   }
 
   #contacto a {
-    color: #007A78; /* Color azul verdoso */
+    color: #007A78;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
     #contacto a:hover {
-      color: #005f5d; /* Color azul verdoso más oscuro */
+      color: #005f5d;
     }
 
   #contacto iframe {
@@ -133,7 +156,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 
-/* Espacio entre el mapa y el pie de página */
 #contacto {
-  margin-bottom: 2rem; /* Agrega un margen inferior de 3rem (48px) */
+  margin-bottom: 2rem;
 }

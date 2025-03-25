@@ -1,20 +1,34 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background-color: #FFFFFF; /* Color de fondo */
+  background-color: #FFFFFF;
   color: #333;
 }
 
-/* Ajustes generales */
 html {
   font-size: 14px;
   position: relative;
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    order: 2;
+    margin-left: 10px; /* Espacio entre el logo y el menú hamburguesa */
+  }
+
+  .navbar-brand.me-3 {
+    order: 1;
+    margin-right: 10px; /* Espacio entre el logo y el menú hamburguesa */
+  }
+
+  .navbar-collapse {
+    order: 3;
+  }
+
+  /* Asegurar que el segundo logo y el menú hamburguesa estén alineados */
+  .d-flex.align-items-center {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -22,7 +36,6 @@ body {
   margin-bottom: 60px;
 }
 
-/* Estilo para botones y formularios */
 .btn:focus,
 .btn:active:focus,
 .btn-link.nav-link:focus,
@@ -31,13 +44,11 @@ body {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-/* Logo */
 .logo-img {
   height: 60px;
   margin-right: 10px;
 }
 
-/* Hero Image */
 .hero-image {
   position: relative;
   width: 100%;
@@ -56,21 +67,19 @@ body {
   object-fit: cover;
 }
 
-/* Texto descriptivo */
 .texto-descriptivo {
   font-weight: bold;
   color: #636156;
   font-size: 1.5rem;
 }
 
-/* Navbar */
 .navbar {
-  background-color: #F2C849 !important; /* Color de fondo */
+  background-color: #F2C849 !important;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
   .navbar .navbar-brand img {
-    height: 50px; /* Tamaño del logo */
+    height: 50px;
   }
 
   .navbar .nav-link {
@@ -84,19 +93,22 @@ body {
       border-radius: 5px;
     }
 
-/* Menú desplegable */
 .dropdown-menu {
   background-color: #F2C849;
   border: none;
-  width: auto; /* Evita que ocupe toda la pantalla */
+  width: auto;
   display: none;
-  min-width: 200px; /* Ancho mínimo */
-  max-width: 270px; /* Ancho máximo */
+  min-width: 200px;
+  max-width: 270px;
   padding: 10px;
-  margin-top: 8px;
+  margin-top: 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+
+  .dropdown-menu.show {
+    display: block;
+  }
 
 .dropdown-item {
   color: #333;
@@ -111,19 +123,32 @@ body {
     border-radius: 4px;
   }
 
-/* Contenedor principal */
 .container {
   padding-top: 20px;
 }
 
-/* Footer */
 footer {
   background-color: #F2C849;
   color: #333;
-  padding: 10px 0; /* Ajuste de espacio */
+  padding: 10px 0;
   text-align: center;
   font-weight: bold;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   font-family: 'Arial', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+  footer .container {
+    padding: 0;
+    margin: 0;
+  }
+
+.navbar-brand.ml-auto img {
+  height: 60px;
+  margin-left: auto;
+  margin-right: 20px;
 }

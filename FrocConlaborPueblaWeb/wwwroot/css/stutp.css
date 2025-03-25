@@ -1,27 +1,24 @@
 
-/* Título de la página */
 .siutp-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #FFC552; /* Color amarillo dorado */
+  color: #FFC552; 
   margin-bottom: 1rem;
 }
 
 .siutp-subtitle {
   font-size: 1.25rem;
-  color: #FFC552; /* Color amarillo dorado */
+  color: #FFC552; 
 }
 
-/* Fondo de la sección de título */
 .bg-dark {
-  background-color: #007A78 !important; /* Color azul verdoso */
+  background-color: #007A78 !important; 
 }
 
-/* Estilos para las secciones */
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #007A78; /* Color azul verdoso */
+  color: #007A78; 
   margin-bottom: 1rem;
 }
 
@@ -39,7 +36,6 @@
   line-height: 1.6;
 }
 
-/* Tarjetas de beneficios */
 .benefit-card {
   text-align: center;
   padding: 1.5rem;
@@ -55,14 +51,14 @@
 
 .benefit-icon {
   font-size: 2.5rem;
-  color: #007A78; /* Color azul verdoso */
+  color: #007A78; 
   margin-bottom: 1rem;
 }
 
 .benefit-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007A78; /* Color azul verdoso */
+  color: #007A78; 
   margin-bottom: 0.5rem;
 }
 

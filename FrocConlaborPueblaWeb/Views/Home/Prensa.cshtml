@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Comunicados y Prensa";
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/css/prensa.css" />
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <h2 class="colaboradores-title text-center">Comunicados y Prensa</h2>
+        <p class="colaboradores-subtitle text-center">Mantente informado con nuestras últimas noticias y comunicados.</p>
+
+        <div class="row">
+            <!-- 📌 Sección de información del comunicado (IZQUIERDA) -->
+            <div class="col-md-8">
+                <div id="detalleComunicado">
+                    <div class="card comunicado-card">
+                        <img id="comunicadoImg" src="~/img/imgPrensa/comunicado1/protesta1.jpg" class="card-img-top" alt="Comunicado 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="comunicadoTitulo">Comunicado 1: Toma de protesta Comité Ejecutivo</h5>
+                            <p class="card-text" id="comunicadoTexto">
+                                Estimados afiliados, queremos informarles sobre los cambios recientes en nuestras políticas laborales.
+                                A partir del próximo mes, implementaremos nuevas medidas para garantizar el bienestar de todos.
+                            </p>
+                        </div>
+
+                        <div id="galeriaProtesta1" class="galeria-imagenes">
+                            <!-- Las imágenes se insertarán aquí mediante JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action comunicado-link"
+                       data-img="~/img/imgPrensa/comunicado1/protesta1.jpg"
+                       data-titulo="Comunicado 1: Toma de protesta Comité Ejecutivo"
+                       data-texto="Estimados afiliados, queremos informarles sobre los cambios recientes en nuestras políticas laborales. A partir del próximo mes, implementaremos nuevas medidas para garantizar el bienestar de todos.">
+                        Comunicado 1: Toma de protesta Comité Ejecutivo
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action comunicado-link"
+                       data-img="~/img/imgPrensa/comunicado2.jpg"
+                       data-titulo="Comunicado 2: Nuevo acuerdo sindical"
+                       data-texto="El nuevo acuerdo entre el sindicato y la empresa mejora las condiciones laborales.">
+                        Comunicado 2: Nuevo acuerdo sindical
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action comunicado-link"
+                       data-img="~/img/imgPrensa/comunicado3.jpg"
+                       data-titulo="Comunicado 3: Beneficios para empleados"
+                       data-texto="Nuevos beneficios para empleados, incluyendo seguro médico y más días de descanso.">
+                        Comunicado 3: Beneficios para empleados
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action comunicado-link"
+                       data-img="~/img/imgPrensa/comunicado4.jpg"
+                       data-titulo="Comunicado 4: Evento especial"
+                       data-texto="Invitamos a todos los afiliados a nuestro evento especial el próximo mes. ¡No te lo pierdas!">
+                        Comunicado 4: Evento especial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/comunicados.js"></script>
+}

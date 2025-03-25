@@ -1,0 +1,97 @@
+/* Estilos para la sección de comunicados */
+.colaboradores-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.colaboradores-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.comunicado-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+  .comunicado-card img {
+    width: 80%; /* Reduce el tamaño de la imagen */
+    max-height: 670px; /* Ajusta la altura máxima */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+  }
+
+  .comunicado-card .card-body {
+    padding: 20px;
+  }
+
+/* Estilos de la lista de comunicados */
+.list-group-item {
+  font-size: 1rem;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  background-color: #f8f9fa; /* Fondo inicial de la lista */
+  color: #333; /* Color de texto inicial */
+  border: 1px solid #ddd; /* Borde sutil */
+}
+
+  .list-group-item:hover {
+    background-color: #007bff; /* Fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+    font-weight: bold; /* Resaltar texto */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    border-color: #0056b3; /* Borde más oscuro al pasar el cursor */
+  }
+
+/* Galería de imágenes */
+#galeriaComunicado1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* Estilos para la galería de imágenes en el comunicado */
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+  .galeria-item:hover {
+    transform: scale(1.05);
+  }

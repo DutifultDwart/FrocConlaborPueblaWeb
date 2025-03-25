@@ -4,9 +4,8 @@
 
 <link rel="stylesheet" href="~/css/index.css" />
 
-
 <div class="container-fluid p-0">
-    <div id="carouselExampleIndicators" class="carousel slide mt-0" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mt-0 custom-carousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -47,16 +46,16 @@
     <a asp-action="STUTP" class="mt-4 btn btn-primary ">Saber mas <span class="bi bi-arrow-down"></span> </a>
 </div>
 
-
 <div class="container mt-8">
     <h2 class="text-center">Noticias</h2>
     <div class="row">
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="~/img/imgNoticia1.jpg" class="card-img-top" alt="Noticia 1">
+                <img src="~/img/noticias/imgNoticia1.jpg" class="card-img-top" alt="Noticia 1">
                 <div class="card-body">
-                    <h5 class="card-title">título de la noticia 1</h5>
-                    <p class="card-text">resumen...</p>
+                    <h5 class="card-title">Mondelēz impuso como representante de obreros a la Federación de Sindicatos, señala FROC-Conlabor</h5>
+                    <p class="card-text">René Sánchez Juárez, líder de la FROC-Conlabor, aseguró que Mondelēz (dedicada a la producción de dulces, 
+                      alimentos y bebidas) impuso como representante de los obreros a la Federación de Sindicatos “Jesús Moreno Jiménez”.</p>
                     <a asp-action="noticias" class="btn btn-primary">Leer más</a>
                 </div>
             </div>
@@ -84,6 +83,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="text-center mt-2">
         <a asp-action="noticias" class="btn btn-secondary">Más noticias</a>
@@ -111,7 +111,7 @@
             </p>
             <p>
                 <i class="bi bi-link-45deg text-dark me-2"></i>
-                <a href="#" class="text-dark text-decoration-none">Síguenos en redes sociales</a>
+                <a  class="text-dark text-decoration-none">Síguenos en redes sociales</a>
             </p>
         </div>
         <div class="col-md-6">

@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Contrato Colectivo";
+}
+
+<link rel="stylesheet" href="~/css/contratoC.css" />
+
+<style>
+    .card-body, .benefit-text {
+        text-align: justify;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center mb-4">Contrato Colectivo</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="pdf-container">
+                <embed src="~/docs/ContratoColectivo.pdf" type="application/pdf" width="100%" height="100%" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-custom">
+                    <!-- Aplicamos la clase bg-custom -->
+                    <h2 class="card-title">Información del Contrato Colectivo</h2>
+                </div>
+                <div class="card-body">
+                    <p>
+                        El contrato colectivo es un acuerdo entre los representantes de los trabajadores y los empleadores
+                        que establece las condiciones laborales, derechos y obligaciones de ambas partes.
+                    </p>
+                    <p>
+                        A continuación, se detallan algunos de los puntos más importantes del contrato colectivo:
+                    </p>
+                    <ul>
+                        <li>Derechos y obligaciones de los trabajadores.</li>
+                        <li>Horarios y jornadas laborales.</li>
+                        <li>Salarios y beneficios adicionales.</li>
+                        <li>Procedimientos para la resolución de conflictos.</li>
+                    </ul>
+                    <p>
+                        Para más información, puedes descargar el documento completo del contrato colectivo:
+                    </p>
+                    <a href="~/docs/ContratoColectivo.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Descargar Contrato Colectivo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
