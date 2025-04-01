@@ -15,6 +15,15 @@ namespace FrocConlaborPueblaWeb.Controllers
 
         public IActionResult Index()
         {
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/carrucel");
+            string[] images = Directory.Exists(folderPath)
+                ? Directory.GetFiles(folderPath)
+                          .Where(file => file.EndsWith(".jpg") || file.EndsWith(".jpeg") || file.EndsWith(".png"))
+                          .Select(file => "/img/carrucel/" + Path.GetFileName(file))
+                          .ToArray()
+                : new string[0]; 
+
+            ViewBag.Images = images; 
             return View();
         }
 
